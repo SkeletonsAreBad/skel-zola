@@ -1,0 +1,32 @@
+[
+	{
+		"title": "GitHub",
+		"brandIcon": "fa-github",
+		"username": "SkeletonsAreBad",
+		"url": "https://github.com/SkeletonsAreBad"
+	},
+	{
+		"title": "DEV Community",
+		"brandIcon": "fa-dev",
+		"username": "@skeletonsarebad",
+		"url": "https://dev.to/skeletonsarebad"
+	},
+	{
+		"title": "Twitter",
+		"brandIcon": "fa-twitter",
+		"username": "@SkeletonsAreBad",
+		"url": "https://twitter.com/SkeletonsAreBad"
+	},
+	{
+		"title": "YouTube",
+		"brandIcon": "fa-youtube",
+		"username": "SkeletonsAreBad",
+		"url": "https://www.youtube.com/channel/UC2Cyq7wBfqoG25ofU6usnpw"
+	},
+	{
+		"title": "Steam",
+		"brandIcon": "fa-steam",
+		"username": "SkeletonsAreBad",
+		"url": "https://steamcommunity.com/id/SkeletonsAreBad"
+	}
+]

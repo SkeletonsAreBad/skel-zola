@@ -1,0 +1,40 @@
+{% set links = load_data(path="content/links.json") %}
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+	<div class="navbar-brand">
+		<a class="navbar-item" href="/">
+			<figure class="image is-28x28">
+				<img class="is-rounded" src="https://www.gravatar.com/avatar/b8faa7e90b4ea9874e388c8b6dc8dd67"
+					width="28" height="28">
+			</figure>
+		</a>
+		<a href="/" class="navbar-item" href="/">SkeletonsAreBad</a>
+	</div>
+
+	<div id="navbarBasicExample" class="navbar-menu">
+		<div class="navbar-start">
+			<a href="/p/" class="navbar-item">
+				<span class="icon"><i class="fas fa-wrench"></i></span>
+				<span>Projects</span>
+			</a>
+			<a href="/c/" class="navbar-item">
+				<span class="icon"><i class="fas fa-envelope"></i></span>
+				<span>Contact</span>
+			</a>
+		</div>
+
+		<div class="navbar-end">
+			{% for link in links %}
+			<a href="{{ link.url | safe }}" class="navbar-item">
+				<span class="icon"><i class="fab {{ link.brandIcon }}"></i></span>
+			</a>
+			{% endfor %}
+			<div class="navbar-item">
+				<div class="buttons"><a href="" class="button is-info">
+						<span class="icon"><i class="fab fa-discord"></i></span>
+						<span>Discord Server</span>
+					</a></div>
+			</div>
+		</div>
+	</div>
+</nav>

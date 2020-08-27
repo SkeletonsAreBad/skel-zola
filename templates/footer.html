@@ -1,0 +1,17 @@
+{% set links = load_data(path="content/links.json") %}
+
+<footer class="footer">
+	<div class="content has-text-centered">
+		<p class="buttons is-centered">
+			{% for link in links %}
+			<a href="{{ link.url | safe }}" class="button is-rounded">
+				<span class="icon">
+					<i class="fab {{ link.brandIcon }}"></i>
+				</span>
+			</a>
+			{% endfor %}
+		</p>
+		<span class="icon"><i class="fab fa-discord"></i></span>
+		<span>SkeletonsAreBad#9999</span>
+	</div>
+</footer>

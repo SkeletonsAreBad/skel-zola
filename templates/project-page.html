@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "hero.html" %}
+{% endblock %}
+
+{% block content %}
+{% include "meta-tags.html" %}
+</br>
+<div class="content">{{ page.content | safe }}</div>
+{% endblock content %}

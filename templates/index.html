@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "navbar.html" %}
+{% endblock %}
+
+{% block content %}
+<h1 class="title">SkeletonsAreBad</h1>
+
+<h1 class="title">Tools and languages</h1>
+<div class="columns">
+	<div class="column">
+		<h2 class="subtitle">Here are the tools I use.</h2>
+		<ul>
+			<li><span class="icon is-small"><i class="fab fa-windows"></i></span><span> Windows</span></li>
+			<li><span class="icon is-small"><i class="fab fa-linux"></i></span><span> Linux</span></li>
+			<li><span class="icon is-small"><i class="fas fa-code"></i></span><span> Vim</span></li>
+			<li><span class="icon is-small"><i class="fab fa-git-alt"></i></span><span> Git</span></li>
+		</ul>
+	</div>
+	<div class="column">
+		<h2 class="subtitle">Here are the languages I use.</h2>
+		<ul>
+			<li><span class="icon is-small"><i class="fab fa-html5"></i></span><span> HTML</span></li>
+			<li><span class="icon is-small"><i class="fab fa-css3"></i></span><span> CSS</span></li>
+			<li><span class="icon is-small"><i class="fab fa-js"></i></span><span> JavaScript</span></li>
+			<li><span class="icon is-small"><i class="fab fa-python"></i></span><span> Python</span></li>
+			<li><span class="icon is-small"><i class="fab fa-rust"></i></span><span> Rust</span></li>
+			<li><span class="icon is-small"><i class="fas fa-terminal"></i></span><span> Bash</span></li>
+		</ul>
+	</div>
+	<div class="column">
+		<h2 class="subtitle">Here is the software I use.</h2>
+		<ul>
+			<li><span class="icon is-small"><i class="fab fa-linux"></i></span><span> Arch Linux</span></li>
+			<li><span class="icon is-small"><i class="fab fa-discord"></i></span><span> Discord</span></li>
+			<li><span class="icon is-small"><i class="fas fa-code"></i></span><span> Visual Studio Code</span></li>
+			<li><span class="icon is-small"><i class="fab fa-gitkraken"></i></span><span> GitKraken</span></li>
+		</ul>
+	</div>
+</div>
+<h1 class="title">Stats for nerds</h1>
+<h2 class="subtitle">Here are some of my GitHub statistics.</h2>
+<div class="columns">
+	<div class="column">
+		<center>
+			<iframe
+				src="https://github-readme-stats.vercel.app/api?username=SkeletonsAreBad&count_private=true&show_icons=true"
+				frameborder="0"></iframe>
+		</center>
+	</div>
+	<div class="column">
+		<center>
+			<iframe src="https://github-readme-stats.vercel.app/api/top-langs/?username=SkeletonsAreBad&layout=compact"
+				frameborder="0"></iframe>
+		</center>
+	</div>
+</div>
+{% endblock content %}
