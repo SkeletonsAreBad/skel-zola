@@ -1,14 +1,12 @@
 <div class="field is-grouped is-grouped-multiline">
 	<div class="control">
 		<div class="tags">
-			<span class="tag is-light">Posted on {{page.date}}</span>
+			<span class="tag is-light">Posted on {{ page.day }}/{{ page.month }}/{{ page.year }}</span>
 		</div>
 	</div>
-
 	<div class="control">
-		<div class="tags has-addons">
-			<span class="tag is-info"><i class="fab fa-twitter"></i></span>
-			<span class="tag is-light is-link">Tweet</span>
+		<div class="tags">
+			<span class="tag is-light">{{ page.reading_time }} minute read</span>
 		</div>
 	</div>
 
