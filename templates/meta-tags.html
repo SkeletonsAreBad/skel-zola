@@ -9,11 +9,16 @@
 			<span class="tag is-light">{{ page.reading_time }} minute read</span>
 		</div>
 	</div>
-
+	{% if page.extra.repository %}
 	<div class="control">
 		<div class="tags has-addons">
-			<span class="tag is-dark"><i class="fab fa-github"></i></span>
-			<span class="tag is-light is-link">View on GitHub</span>
+			<a class="tag is-dark"
+				href="https://github.com/{{ page.extra.repository[0] }}/{{ page.extra.repository[1] }}"><i
+					class="fab fa-github"></i></a>
+			<a class="tag is-light is-link"
+				href="https://github.com/{{ page.extra.repository[0] }}/{{ page.extra.repository[1] }}">{{ page.extra.repository[0] }}/{{ page.extra.repository[1] }}
+				on GitHub</a>
 		</div>
 	</div>
+	{% endif %}
 </div>
