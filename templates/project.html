@@ -5,12 +5,11 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="title">
-	{{ section.title }}
-</h1>
-<ul>
+<h1 class="title">Projects</h1>
+<h2 class="subtitle">Here is what I have been working on.</h2>
+<div class="tile is-ancestor" style="flex-wrap: wrap;">
 	{% for page in section.pages %}
-	<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+	{% include "project-card.html" %}
 	{% endfor %}
-</ul>
+</div>
 {% endblock content %}
