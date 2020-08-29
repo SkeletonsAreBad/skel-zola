@@ -1,0 +1,29 @@
+[[social]]
+icon = "fab fa-github"
+title = "GitHub"
+username = "SkeletonsAreBad"
+url = "https://github.com/SkeletonsAreBad"
+
+[[social]]
+icon = "fab fa-dev"
+title = "DEV Community"
+username = "@skeletonsarebad"
+url = "https://dev.to/skeletonsarebad"
+
+[[social]]
+icon = "fab fa-twitter"
+title = "Twitter"
+username = "@SkeletonsAreBad"
+url = "https://twitter.com/SkeletonsAreBad"
+
+[[social]]
+icon = "fab fa-youtube"
+title = "YouTube"
+username = "SkeletonsAreBad"
+url = "https://www.youtube.com/channel/UC2Cyq7wBfqoG25ofU6usnpw"
+
+[[social]]
+icon = "fab fa-steam"
+title = "Steam"
+username = "SkeletonsAreBad"
+url = "https://steamcommunity.com/id/SkeletonsAreBad"
