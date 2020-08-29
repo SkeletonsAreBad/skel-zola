@@ -8,7 +8,7 @@ collections:
     name: "data"
     files:
       - label: "Links"
-        name: "Links"
+        name: "links"
         file: "content/links.json"
         fields:
           - label: "Social"
@@ -40,6 +40,61 @@ collections:
                   widget: "string",
                   required: true,
                   default: "https://",
+                }
+      - label: "Tools"
+        name: "tools"
+        file: "content/tools.json"
+        fields:
+          - label: "Tools"
+            name: "tools"
+            widget: "list"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: true,
+                }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "string",
+                  required: true,
+                  default: "fab fa-",
+                }
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: true,
+                }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "string",
+                  required: true,
+                  default: "fab fa-",
+                }
+          - label: "Software"
+            name: "software"
+            widget: "list"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: true,
+                }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "string",
+                  required: true,
+                  default: "fab fa-",
                 }
   - label: "Projects"
     label_singular: "Project"
