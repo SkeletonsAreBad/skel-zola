@@ -4,9 +4,40 @@ backend:
 media_folder: static/img/uploads
 public_folder: /img/uploads
 collections:
-  - name: "projects"
-    label: "Projects"
+  - label: "Data"
+    name: "data"
+    files:
+      - label: "Links"
+        name: "Links"
+        file: "content/links.toml"
+        fields:
+          - label: "Social"
+            name: "social"
+            widget: "list"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: true,
+                }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "string",
+                  required: true,
+                  default: "fab fa-",
+                }
+              - {
+                  label: "Username",
+                  name: "username",
+                  widget: "string",
+                  required: true,
+                }
+              - { label: "URL", name: "url", widget: "string", required: true }
+  - label: "Projects"
     label_singular: "Project"
+    name: "projects"
     folder: "content/p"
     format: toml-frontmatter
     create: true
@@ -25,13 +56,5 @@ collections:
           widget: "datetime",
           required: true,
           dateFormat: "YYYY-MM-DD",
-        }
-      - { label: "Feature Image", name: "extra.image", widget: "image" }
-      - {
-          label: "GitHub Repository",
-          name: "extra.repository",
-          widget: "list",
-          allow_add: false,
-          default: ["user", "name"],
         }
       - { label: "Body", name: "body", widget: "markdown", required: true }
