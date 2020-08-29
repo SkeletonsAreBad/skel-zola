@@ -2,9 +2,10 @@
 title = "THE WHEEL"
 description = "Test your luck with THE WHEEL in this Minecraft datapack."
 date = 2020-06-07
+
 [extra]
-image = "https://skel.cc/img/2020-07-07_19.21.49.png"
-repository = ["SkeletonsAreBad", "the-wheel"]
+image = "/img/uploads/2020-07-07_19.21.49.png"
+repository = "SkeletonsAreBad/the-wheel"
 +++
 
 # Introduction
