@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Links"
         name: "Links"
-        file: "content/links.toml"
+        file: "content/links.json"
         fields:
           - label: "Social"
             name: "social"
@@ -34,7 +34,13 @@ collections:
                   widget: "string",
                   required: true,
                 }
-              - { label: "URL", name: "url", widget: "string", required: true }
+              - {
+                  label: "URL",
+                  name: "url",
+                  widget: "string",
+                  required: true,
+                  default: "https://",
+                }
   - label: "Projects"
     label_singular: "Project"
     name: "projects"
