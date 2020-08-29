@@ -1,4 +1,6 @@
-<section class="hero is-primary is-medium">
+<section class="hero is-dark is-medium" {% if page.extra.image %}
+	style="background-image: url('{{ page.extra.image }}'); background-size: cover; background-position: center; background-blend-mode: overlay;"
+	{% endif %}>
 	<div class="hero-head">{% include "navbar.html" %}</div>
 	<div class="hero-body">
 		<div class="container">
