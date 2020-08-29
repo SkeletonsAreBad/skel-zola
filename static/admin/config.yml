@@ -63,4 +63,20 @@ collections:
           required: true,
           dateFormat: "YYYY-MM-DD",
         }
+      - label: "Extra Settings"
+        name: "extra"
+        widget: "object"
+        fields:
+          - {
+              label: "Feature Image",
+              name: "image",
+              widget: "image",
+              required: true,
+            }
+          - {
+              label: "GitHub Repository",
+              name: "repository",
+              widget: "string",
+              default: "/",
+            }
       - { label: "Body", name: "body", widget: "markdown", required: true }
