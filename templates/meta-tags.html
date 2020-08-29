@@ -12,12 +12,10 @@
 	{% if page.extra.repository %}
 	<div class="control">
 		<div class="tags has-addons">
-			<a class="tag is-dark"
-				href="https://github.com/{{ page.extra.repository[0] }}/{{ page.extra.repository[1] }}"><i
+			<a class="tag is-dark" href="https://github.com/{{ page.extra.repository }}"><i
 					class="fab fa-github"></i></a>
 			<a class="tag is-light is-link"
-				href="https://github.com/{{ page.extra.repository[0] }}/{{ page.extra.repository[1] }}">{{ page.extra.repository[0] }}/{{ page.extra.repository[1] }}
-				on GitHub</a>
+				href="https://github.com/{{ page.extra.repository }}">{{ page.extra.repository }} on GitHub</a>
 		</div>
 	</div>
 	{% endif %}
