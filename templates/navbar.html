@@ -19,9 +19,9 @@
 		</div>
 
 		<div class="navbar-end">
-			{% for link in links %}
+			{% for link in links.social %}
 			<a href="{{ link.url | safe }}" class="navbar-item">
-				<span class="icon"><i class="fab {{ link.brandIcon }}"></i></span>
+				<span class="icon"><i class="{{ link.icon }}"></i></span>
 			</a>
 			{% endfor %}
 		</div>
