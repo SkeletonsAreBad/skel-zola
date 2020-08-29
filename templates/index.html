@@ -5,10 +5,16 @@
 {% endblock %}
 
 {% block content %}
+{% set projects = get_section(path="p/_index.md") %}
+{% set tools = load_data(path="content/tools.json") %}
 <h1 class="title is-1">SkeletonsAreBad</h1>
 <h1 class="title">Projects</h1>
 <h2 class="subtitle">Here is what I have been working on.</h2>
-
+<div class="tile is-ancestor" style="flex-wrap: wrap;">
+	{% for page in projects.pages %}
+	{% include "project-card.html" %}
+	{% endfor %}
+</div>
 <hr class="hr">
 <h1 class="title">Tools and languages</h1>
 <h2 class="subtitle">Here are some of the things I use.</h2>
