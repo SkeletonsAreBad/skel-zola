@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block meta %}
+<title>{{ page.title }} | SkeletonsAreBad</title>
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="og:title" content="{{ page.title }}">
+<meta name="description" content="{{ page.description }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta property="og:description" content="{{ page.description }}">
+{% endblock %}
+
 {% block header %}
 {% include "hero.html" %}
 {% endblock %}
