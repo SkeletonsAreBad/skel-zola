@@ -16,29 +16,25 @@
 	<div class="column">
 		<h2 class="subtitle">Tools</h2>
 		<ul>
-			<li><span class="icon"><i class="fab fa-windows"></i></span><span>Windows</span></li>
-			<li><span class="icon"><i class="fab fa-linux"></i></span><span>Linux</span></li>
-			<li><span class="icon"><i class="fas fa-code"></i></span><span>Vim</span></li>
-			<li><span class="icon"><i class="fab fa-git-alt"></i></span><span>Git</span></li>
+			{% for tool in tools.tools %}
+			<li><span class="icon"><i class="{{ tool.icon }}"></i></span><span>{{ tool.title }}</span></li>
+			{% endfor %}
 		</ul>
 	</div>
 	<div class="column">
 		<h2 class="subtitle">Languages</h2>
 		<ul>
-			<li><span class="icon"><i class="fab fa-html5"></i></span><span>HTML</span></li>
-			<li><span class="icon"><i class="fab fa-css3"></i></span><span>CSS</span></li>
-			<li><span class="icon"><i class="fab fa-js"></i></span><span>JavaScript</span></li>
-			<li><span class="icon"><i class="fab fa-python"></i></span><span>Python</span></li>
-			<li><span class="icon"><i class="fab fa-rust"></i></span><span>Rust</span></li>
+			{% for language in tools.languages %}
+			<li><span class="icon"><i class="{{ language.icon }}"></i></span><span>{{ language.title }}</span></li>
+			{% endfor %}
 		</ul>
 	</div>
 	<div class="column">
 		<h2 class="subtitle">Software</h2>
 		<ul>
-			<li><span class="icon"><i class="fab fa-chrome"></i></span><span>Chromium</span></li>
-			<li><span class="icon"><i class="fab fa-firefox-browser"></i></span><span>Firefox</span></li>
-			<li><span class="icon"><i class="fab fa-discord"></i></span><span>Discord</span></li>
-			<li><span class="icon"><i class="fas fa-code"></i></span><span>Visual Studio Code</span></li>
+			{% for software in tools.software %}
+			<li><span class="icon"><i class="{{ software.icon }}"></i></span><span>{{ software.title }}</span></li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>
