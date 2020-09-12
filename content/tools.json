@@ -1,64 +1,68 @@
 {
-	"tools": [
-		{
-			"title": "Linux",
-			"icon": "fab fa-linux"
-		},
-		{
-			"title": "Vim",
-			"icon": "fas fa-code"
-		},
-		{
-			"title": "Visual Studio Code",
-			"icon": "fas fa-code"
-		},
-		{
-			"title": "Git",
-			"icon": "fab fa-git-alt"
-		},
-		{
-			"title": "GitKraken",
-			"icon": "fab fa-gitkraken"
-		}
-	],
-	"languages": [
-		{
-			"title": "HTML",
-			"icon": "fab fa-html5"
-		},
-		{
-			"title": "CSS",
-			"icon": "fab fa-css3"
-		},
-		{
-			"title": "JavaScript",
-			"icon": "fab fa-js"
-		},
-		{
-			"title": "Python",
-			"icon": "fab fa-python"
-		},
-		{
-			"title": "Rust",
-			"icon": "fab fa-rust"
-		}
-	],
-	"software": [
-		{
-			"title": "Chromium",
-			"icon": "fab fa-chrome"
-		},
-		{
-			"title": "Spotify",
-			"icon": "fab fa-spotify"
-		},
-		{
-			"title": "Discord",
-			"icon": "fab fa-discord"
-		},
-		{
-			"title": "Steam",
-			"icon": "fab fa-steam"
-		}
-	]
+  "tools": [
+    {
+      "title": "Linux",
+      "icon": "fab fa-linux"
+    },
+    {
+      "title": "Vim",
+      "icon": "fas fa-code"
+    },
+    {
+      "title": "Visual Studio Code",
+      "icon": "fas fa-code"
+    },
+    {
+      "title": "Git",
+      "icon": "fab fa-git-alt"
+    },
+    {
+      "title": "GitKraken",
+      "icon": "fab fa-gitkraken"
+    }
+  ],
+  "languages": [
+    {
+      "title": "HTML",
+      "icon": "fab fa-html5"
+    },
+    {
+      "title": "CSS",
+      "icon": "fab fa-css3"
+    },
+    {
+      "title": "JavaScript",
+      "icon": "fab fa-js"
+    },
+    {
+      "title": "Python",
+      "icon": "fab fa-python"
+    },
+    {
+      "title": "Rust",
+      "icon": "fab fa-rust"
+    },
+    {
+      "icon": "fas fa-globe-asia",
+      "title": "English (Australia)"
+    }
+  ],
+  "software": [
+    {
+      "title": "Chromium",
+      "icon": "fab fa-chrome"
+    },
+    {
+      "title": "Spotify",
+      "icon": "fab fa-spotify"
+    },
+    {
+      "title": "Discord",
+      "icon": "fab fa-discord"
+    },
+    {
+      "title": "Steam",
+      "icon": "fab fa-steam"
+    }
+  ]
 }
