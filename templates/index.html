@@ -10,13 +10,21 @@
 {% endblock %}
 
 {% block header %}
-{% include "navbar.html" %}
+<section class="hero is-black is-medium"
+	style="background-image: url('/img/skeletonsarebad-background.png'); background-size: cover; background-position: center;">
+	<div class="hero-head">{% include "navbar.html" %}</div>
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title is-1">SkeletonsAreBad</h1>
+			<h2 class="subtitle">cool and good</h2>
+		</div>
+	</div>
+</section>
 {% endblock %}
 
 {% block content %}
 {% set projects = get_section(path="p/_index.md") %}
 {% set tools = load_data(path="content/tools.json") %}
-<h1 class="title is-1">SkeletonsAreBad</h1>
 <h1 class="title">Projects</h1>
 <h2 class="subtitle">Here is what I have been working on.</h2>
 <div class="tile is-ancestor" style="flex-wrap: wrap;">
