@@ -36,7 +36,7 @@ THE WHEEL can result in 32 different outcomes all with an even amount of chance.
 
 # Installation
 
-1. [Download THE WHEEL](https://gitlab.com/SkeletonsAreBad/the-wheel/-/releases) (click `Source Code (zip)` )
+1. [Download THE WHEEL](https://github.com/SkeletonsAreBad/the-wheel/releases/) (click `Source Code (zip)` )
 2. Place the ZIP file in your world's `datapacks` directory
 3. Restart the world/server or type `/reload`
 # Usage
