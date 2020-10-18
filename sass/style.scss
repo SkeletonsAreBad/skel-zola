@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// Set your brand colors
+$cyan: #00aaaa;
+
+// Update Bulma's global variables
+$family-sans-serif: "Fira Sans", sans-serif;
+$primary: $cyan;
+$link: $cyan;
+
+html {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+* {
+  box-shadow: none !important;
+}
+
+.tile .box {
+  border: 1px solid;
+}
+
+img,
+picture,
+video,
+.invert{
+  filter: invert(1) hue-rotate(180deg);
+}
+
+// Import only what you need from Bulma
+@import "../bulma/bulma.sass";
